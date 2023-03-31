@@ -19,5 +19,24 @@
 </head>
 <body>
     <div id="area">Interaja...</div>
+    <script>
+        var a = document.getElementById('area');
+        a.addEventListener('mouseenter', entrou)
+        a.addEventListener('mouseout', saiu)
+        a.addEventListener('click', clicou)
+        function entrou(){
+            a.innerHTML='entrou';
+            a.style.background="green"
+        }
+        function saiu(){
+            a.innerHTML="Saiu..."
+            a.style.background='red'
+        }
+        function clicou(){
+            a.innerHTML='clicou'
+            a.style.background="black"
+        }
+
+    </script>
 </body>
 </html>
